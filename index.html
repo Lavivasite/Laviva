@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <title>Laviva</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="container">
+            <div class="header__top">
+                <div class="header__info">
+                    <a class="logo__header" href="">
+                        <img class="logo__header-img" src="images/logo.svg" alt="">
+                    </a>
+                    <nav class="nav">
+                        <ul class="nav__list">
+                            <li class="nav__list-item">
+                                <a class="nav__list-link" href="#">
+                                    Menu
+                                </a>
+                            </li>
+                            <li class="nav__list-item">
+                                <a class="nav__list-link" href="#">
+                                    About us
+                                </a>
+                            </li>
+                            <li class="nav__list-item">
+                                <a class="nav__list-link" href="#">
+                                    Blog
+                                </a>
+                            </li>
+                            <li class="nav__list-item">
+                                <a class="nav__list-link" href="#">
+                                    Contact
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="header__links">
+                            <a class="header__links-search" href="#">
+                                <svg class="svg" xmlns="http://www.w3.org/2000/svg" width="22" height="22"
+                                    viewBox="0 0 22 22" fill="none">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M14.3333 14.3333L21 21L14.3333 14.3333Z" fill="#F4EDED" />
+                                    <path
+                                        d="M15.0404 13.6262C14.6499 13.2357 14.0168 13.2357 13.6262 13.6262C13.2357 14.0168 13.2357 14.6499 13.6262 15.0404L15.0404 13.6262ZM20.2929 21.7071C20.6834 22.0976 21.3166 22.0976 21.7071 21.7071C22.0976 21.3166 22.0976 20.6834 21.7071 20.2929L20.2929 21.7071ZM8.77778 15.5556C5.03451 15.5556 2 12.521 2 8.77778H0C0 13.6256 3.92995 17.5556 8.77778 17.5556V15.5556ZM2 8.77778C2 5.03451 5.03451 2 8.77778 2V0C3.92995 0 0 3.92995 0 8.77778H2ZM8.77778 2C12.521 2 15.5556 5.03451 15.5556 8.77778H17.5556C17.5556 3.92995 13.6256 0 8.77778 0V2ZM15.5556 8.77778C15.5556 12.521 12.521 15.5556 8.77778 15.5556V17.5556C13.6256 17.5556 17.5556 13.6256 17.5556 8.77778H15.5556ZM13.6262 15.0404L20.2929 21.7071L21.7071 20.2929L15.0404 13.6262L13.6262 15.0404Z"
+                                        fill="#FCFCFC" />
+                                </svg>
+                            </a>
+                            <a class="header__links-buy" href="#">
+                                <svg class="svg" xmlns="http://www.w3.org/2000/svg" width="22" height="22"
+                                    viewBox="0 0 22 22" fill="none">
+                                    <path
+                                        d="M14.5907 18.7778C14.5907 20.0051 15.6048 21 16.8558 21C18.1068 21 19.1209 20.0051 19.1209 18.7778C19.1209 17.5505 18.1068 16.5556 16.8558 16.5556C15.6048 16.5556 14.5907 17.5505 14.5907 18.7778Z"
+                                        fill="#F4EDED" />
+                                    <path
+                                        d="M4.39767 18.7778C4.39767 20.0051 5.4118 21 6.66278 21C7.91377 21 8.9279 20.0051 8.9279 18.7778C8.9279 17.5505 7.91377 16.5556 6.66278 16.5556C5.4118 16.5556 4.39767 17.5505 4.39767 18.7778Z"
+                                        fill="#F4EDED" />
+                                    <path
+                                        d="M16.8558 16.5556C15.6048 16.5556 14.5907 17.5505 14.5907 18.7778C14.5907 20.0051 15.6048 21 16.8558 21C18.1068 21 19.1209 20.0051 19.1209 18.7778C19.1209 17.5505 18.1068 16.5556 16.8558 16.5556ZM16.8558 16.5556H8.12825C7.60585 16.5556 7.34455 16.5556 7.12952 16.4644C6.93987 16.384 6.77529 16.2542 6.65541 16.0891C6.5195 15.9019 6.46582 15.6514 6.35637 15.1503L3.57258 2.4053C3.46313 1.90417 3.40767 1.65362 3.27175 1.46644C3.15187 1.30136 2.98792 1.17157 2.79827 1.09116C2.58324 1 2.32259 1 1.80019 1H1M4.39767 4.33333H18.9773C19.7948 4.33333 20.2033 4.33333 20.4777 4.5004C20.718 4.64674 20.8935 4.87597 20.9703 5.14307C21.0578 5.44799 20.9455 5.83329 20.7189 6.60384L19.1508 11.9372C19.0153 12.3979 18.9475 12.6283 18.8101 12.7993C18.6888 12.9501 18.5288 13.0675 18.3474 13.14C18.1419 13.2222 17.8976 13.2222 17.4088 13.2222H6.35752M6.66278 21C5.4118 21 4.39767 20.0051 4.39767 18.7778C4.39767 17.5505 5.4118 16.5556 6.66278 16.5556C7.91377 16.5556 8.9279 17.5505 8.9279 18.7778C8.9279 20.0051 7.91377 21 6.66278 21Z"
+                                        stroke="white" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+                            </a>
+                        </div>
+                    </nav>
+                </div>
+                <div class="burger">
+
+                </div>
+            </div>
+
+            <div class="header__content">
+                <div class="header__content-box">
+                    <h1 class="header__content-title">
+                        Wakes Your
+                        Dreams
+
+                    </h1>
+                    <a class="header__content-link" href="#">
+                        VIEW MENU
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </header>
+
+    <main class="main">
+        <section class="about">
+
+            <div class="container">
+                <div class="about__inner">
+                    <img class="about__img" src="images/about-img.png" alt="">
+                    <div class="about__content">
+                        <h2 class="about__title title">About us</h2>
+                        <p class="about__text">Coffeehouse "Laviva" is a team of professionals who love what they do and
+                            bring their knowledge and experience to every cup of coffee. <br>
+                            Quality is one of the main priorities in everything.
+                        </p>
+                        <p class="about__text about__text--two">We use only fresh and quality ingredients for our food
+                            and
+                            drinks. Our team
+                            is constantly
+                            working to improve our menu and add new delicious dishes to satisfy the tastes of every
+                            guest.
+                        </p>
+
+                        <a class="about__link" href="#">
+                            READ MORE
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="menu">
+
+            <div class="container slider__container">
+
+                <h2 class="menu__title title">Menu</h2>
+                <div class="menu__box swiper">
+                    <div class="menu__wrapper swiper-wrapper">
+                        <div class="menu__block swiper-slide">
+                            <div class="menu__block-body">
+                                <img class="menu__block-img" src="images/menu-img-1.png" alt="">
+                                <p class="menu__block-text">Drinks</p>
+                            </div>
+                        </div>
+                        <div class="menu__block swiper-slide">
+                            <div class="menu__block-body">
+                                <img class="menu__block-img" src="images/menu-img-2.jpg" alt="">
+                                <p class="menu__block-text">Food</p>
+                            </div>
+                        </div>
+                        <div class="menu__block swiper-slide">
+                            <div class="menu__block-body">
+                                <img class="menu__block-img" src="images/menu-img-3.jpg" alt="">
+                                <p class="menu__block-text">Desert</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="drinks">
+
+            <div class="container">
+                <h3 class="drinks__title title">Popular drinks</h3>
+                <div class="drinks__box">
+                    <div class="drinks__block">
+                        <button class="drinks__block-btn">ORDER NOW </button>
+                        <div class="drinks__block-body">
+                            <img class="drinks__block-img" src="images/drinks-img-1.png" alt="">
+                            <h3 class="drinks__block-title">ESPRESSO</h3>
+                            <p class="drinks__block-text">Without Milk</p>
+                            <p class="drinks__block-price">300 ₽</p>
+                        </div>
+                    </div>
+                    <div class="drinks__block">
+                        <button class="drinks__block-btn">ORDER NOW </button>
+                        <div class="drinks__block-body">
+                            <img class="drinks__block-img" src="images/drinks-img-2.png" alt="">
+                            <h3 class="drinks__block-title">MOCACCINO</h3>
+                            <p class="drinks__block-text">With Chocolate</p>
+                            <p class="drinks__block-price">350 ₽</p>
+                        </div>
+                    </div>
+                    <div class="drinks__block">
+                        <button class="drinks__block-btn">ORDER NOW </button>
+                        <div class="drinks__block-body">
+                            <img class="drinks__block-img" src="images/drinks-img-3.png" alt="">
+                            <h3 class="drinks__block-title">LATTE CARAMEL</h3>
+                            <p class="drinks__block-text">With Caramel</p>
+                            <p class="drinks__block-price">370 ₽</p>
+                        </div>
+                    </div>
+                    <div class="drinks__block">
+                        <button class="drinks__block-btn">ORDER NOW </button>
+                        <div class="drinks__block-body">
+                            <img class="drinks__block-img" src="images/drinks-img-4.png" alt="">
+                            <h3 class="drinks__block-title">FLAT WHITE</h3>
+                            <p class="drinks__block-text">With double espresso</p>
+                            <p class="drinks__block-price">380 ₽</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="testimonial">
+            <div class="container">
+                <h3 class="testimonial__title title">
+                    Testimonial
+                </h3>
+                <div class="testimonial__box swiper">
+                    <div class="testimonial__wrapper swiper-wrapper">
+                        <div class="testimonial__block swiper-slide">
+                            <div class="testimonial__block-body">
+                                <p class="testimonial__text">I visited the coffee shop yesterday and was pleasantly
+                                    surprised by
+                                    the quality of service and the taste of the coffee. The coffee shop is in a
+                                    convenient
+                                    location and has a pleasant atmosphere.
+                                </p>
+                                <div class="testimonial__avatar">
+                                    <p class="testimonial__name">Jane Cooper</p>
+                                    <img class="testimonial__img" src="images/testimonial-img-1.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonial__block swiper-slide">
+                            <div class="testimonial__block-body">
+                                <p class="testimonial__text">The coffee shop is cozy and friendly, and the prices are
+                                    still
+                                    very
+                                    affordable. I recommend this coffee shop to anyone looking for great coffee and a
+                                    pleasant
+                                    atmosphere. I will definitely come back here more than once!</p>
+                                <div class="testimonial__avatar">
+                                    <p class="testimonial__name">Wade Warren</p>
+                                    <img class="testimonial__img" src="images/testimonial-img-2.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonial__block swiper-slide">
+                            <div class="testimonial__block-body">
+                                <p class="testimonial__text">The prices at the coffee shop were also very reasonable
+                                    compared to
+                                    other coffee shops in the area. I definitely recommend this coffee shop to anyone
+                                    looking
+                                    for great coffee and a nice atmosphere.
+                                </p>
+                                <div class="testimonial__avatar">
+                                    <p class="testimonial__name">Cameron Williamson</p>
+                                    <img class="testimonial__img" src="images/testimonial-img-3.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        
+
+                    </div>
+                    <div class="testimonial-pagination"></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="blog">
+            <div class="container">
+                <h3 class="blog__title title">
+                    Blog
+                </h3>
+                <div class="blog__inner">
+                    <div class="blog__slider swiper">
+                        <div class="blog__slider-wrapper swiper-wrapper">
+                            <div class="blog__slide swiper-slide">
+                                <div class="blog__slide-body">
+                                    <img class="blog__img" src="images/blog-1.jpg" alt="">
+                                    <h3 class="blog__slide-title">
+                                        The main coffee trends in 2023
+                                    </h3>
+                                    <p class="blog__text">
+                                        Recently in the coffee market, you can notice several interesting trends that
+                                        have
+                                        become popular among lovers of this drink. One of these trends is an increase in
+                                        demand
+                                        for micro-plantation coffee, which guarantees high quality and great taste.
+                                    </p>
+                                    <button class="blog__btn">
+                                        READ MORE
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="blog__slide swiper-slide">
+                                <div class="blog__slide-body">
+                                    <img class="blog__img" src="images/blog-2.jpg" alt="">
+                                    <h3 class="blog__slide-title">
+                                        How to choose coffee for yourself?
+                                    </h3>
+                                    <p class="blog__text">
+                                        Coffee is not just a drink, it is a whole world with its own intricacies and
+                                        peculiarities. There are various factors to consider when choosing coffee, such
+                                        as
+                                        taste
+                                        preferences, type of caffeine, brewing method, and more..
+                                    </p>
+                                    <button class="blog__btn">
+                                        READ MORE
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="blog__slide swiper-slide">
+                                <div class="blog__slide-body">
+                                    <img class="blog__img" src="images/blog-3.jpg" alt="">
+                                    <h3 class="blog__slide-title">
+                                        Coffee in the culture of different countries
+                                    </h3>
+                                    <p class="blog__text">
+                                        In Italy, coffee is not just a drink, but almost a national treasure. Italian
+                                        bars
+                                        make
+                                        coffee so delicious that it is there that you have to queue. Coffee in Italy is
+                                        not
+                                        just
+                                        a small cup of espresso, but also cappuccino, ristretto, latte, macchiato, etc.
+                                    </p>
+                                    <button class="blog__btn">
+                                        READ MORE
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="blog__slide swiper-slide">
+                                <div class="blog__slide-body">
+                                    <img class="blog__img" src="images/blog-1.jpg" alt="">
+                                    <h3 class="blog__slide-title">
+                                        The main coffee trends in 2023
+                                    </h3>
+                                    <p class="blog__text">
+                                        Recently in the coffee market, you can notice several interesting trends that
+                                        have
+                                        become popular among lovers of this drink. One of these trends is an increase in
+                                        demand
+                                        for micro-plantation coffee, which guarantees high quality and great taste.
+                                    </p>
+                                    <button class="blog__btn">
+                                        READ MORE
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="blog__slide swiper-slide">
+                                <div class="blog__slide-body">
+                                    <img class="blog__img" src="images/blog-2.jpg" alt="">
+                                    <h3 class="blog__slide-title">
+                                        How to choose coffee for yourself?
+                                    </h3>
+                                    <p class="blog__text">
+                                        Coffee is not just a drink, it is a whole world with its own intricacies and
+                                        peculiarities. There are various factors to consider when choosing coffee, such
+                                        as
+                                        taste
+                                        preferences, type of caffeine, brewing method, and more..
+                                    </p>
+                                    <button class="blog__btn">
+                                        READ MORE
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="blog__slide swiper-slide">
+                                <div class="blog__slide-body">
+                                    <img class="blog__img" src="images/blog-3.jpg" alt="">
+                                    <h3 class="blog__slide-title">
+                                        Coffee in the culture of different countries
+                                    </h3>
+                                    <p class="blog__text">
+                                        In Italy, coffee is not just a drink, but almost a national treasure. Italian
+                                        bars
+                                        make
+                                        coffee so delicious that it is there that you have to queue. Coffee in Italy is
+                                        not
+                                        just
+                                        a small cup of espresso, but also cappuccino, ristretto, latte, macchiato, etc.
+                                    </p>
+                                    <button class="blog__btn">
+                                        READ MORE
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="arrow-prev">
+                        <svg width="47" height="47" viewBox="0 0 47 47" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M21 16L28.5 23.5L21 31M46 23.5C46 11.0736 35.9264 1 23.5 1C11.0736 1 1 11.0736 1 23.5C1 35.9264 11.0736 46 23.5 46C35.9264 46 46 35.9264 46 23.5Z"
+                                stroke="#7E2832" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+
+                    </div>
+                    <div class="arrow-next">
+                        <svg width="47" height="47" viewBox="0 0 47 47" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M21 16L28.5 23.5L21 31M46 23.5C46 11.0736 35.9264 1 23.5 1C11.0736 1 1 11.0736 1 23.5C1 35.9264 11.0736 46 23.5 46C35.9264 46 46 35.9264 46 23.5Z"
+                                stroke="#7E2832" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="update">
+            <div class="container update__inner">
+                <h3 class="update__title title">
+                    Get update
+                </h3>
+                <p class="update__text">
+                    Subcribe our news and get 20% of discount
+                </p>
+                <div class="input__update-block">
+                    <input class="input" type="email" placeholder="Your Email address ">
+                    <button class="input__btn">SUBCRIBE</button>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+   <footer class="footer">
+        <div class="container footer__inner">
+            <nav class="menu__footer">
+                <p class="menu__footer-title">
+                    Navigation
+                </p>
+                <ul class="menu__footer-list">
+                    <li class="menu__footer-item">
+                        <a class="menu__footer-link" href="#">
+                            Menu
+                        </a>
+                    </li>
+                    <li class="menu__footer-item">
+                        <a class="menu__footer-link" href="#">
+                            About us
+                        </a>
+                    </li>
+                    <li class="menu__footer-item">
+                        <a class="menu__footer-link" href="#">
+                            Blog
+                        </a>
+                    </li>
+                    <li class="menu__footer-item">
+                        <a class="menu__footer-link" href="#">
+                            Contact
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <nav class="contacts__footer">
+                <p class="contacts__footer-title">
+                    Contact us
+                </p>
+                <ul class="contacts__footer-list">
+                    <li class="contacts__footer-item">
+                        <img class="contacts__footer-img" src="images/call.svg" alt="">
+                        <p class="contacts__footer-link" href="#">
+                            +7 (495) 743-32-00
+                        </p>
+                    </li>
+                    <li class="contacts__footer-item">
+                        <img class="contacts__footer-img" src="images/location.svg" alt="">
+                        <p class="contacts__footer-link" href="#">
+                            Moscow, Paveletskaya Square, 2c1
+                        </p>
+                    </li>
+                    <li class="contacts__footer-item">
+                        <img class="contacts__footer-img" src="images/time.svg" alt="">
+                        <p class="contacts__footer-link" href="#">
+                            9:00 AM-8:00 PM
+                        </p>
+                    </li>
+                    <li class="contacts__footer-item">
+                        <a class="contacts__footer-link-facebook" href="#">
+                            <img class="contacts__footer--facebook" src="images/facebook.svg" alt="">
+                        </a>
+                        <a class="contacts__footer-link" href="#">
+                            <img class="contacts__footer-img" src="images/vk.svg" alt="">
+                        </a>
+                        <a class="contacts__footer-link" href="#">
+                            <img class="contacts__footer-img contacts__footer--inst" src="images/instagram.svg" alt="">
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="input__footer-inner">
+                <p class="input__footer-title">News Latter</p>
+                <div class="input__footer-block">
+                    <input class="input__footer" type="email" placeholder="Enter your email ">
+                    <button class="input__footer-btn">SUBCRIBE</button>
+                </div>
+                <p class="input__copy">© LAVIVA 2023 </p>
+            </div>
+        </div>
+    </footer> 
+
+
+
+
+        <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+        <script src="js/main.js"></script>
+
+</body>
+
+</html>
