@@ -8,6 +8,10 @@ html {
     box-sizing: inherit;
 }
 
+button:active {
+    border-style: outset;
+}
+
 body {
     font-family: 'Inter', sans-serif;
     color: #F4EDED;
@@ -354,24 +358,7 @@ a {
 
 }
 
-.drinks__block-btn:hover {
-    background-color: #FFF9F1;
-    border: 1px solid rgba(122, 87, 62, 0.50);
-    color: #7E2832;
 
-}
-
-.drinks__block-btn:hover~.drinks__block-body {
-    color: #fff;
-    background-color: #B63E4C;
-    border-radius: 5px;
-    transition: all .3s ease;
-}
-
-.drinks__block-btn:hover~.drinks__block-body>.drinks__block-text {
-    color: #fff;
-
-}
 
 .drinks__block-img {
     width: 100%;
@@ -566,13 +553,9 @@ a {
 .arrow-next:hover,
 .arrow-prev:hover {}
 
-svg {}
 
-.arrow-next:hover svg path,
-.arrow-prev:hover svg path {
-    transition: all .2s ease;
-    stroke: #fff
-}
+
+
 
 .arrow-next:active svg path,
 .arrow-prev:active svg path {
@@ -585,6 +568,10 @@ svg {}
 
 .swiper-button-disabled:hover svg path {
     stroke: #7E2832;
+}
+
+.arrow-next:active{
+    color: #922C38;
 }
 
 /* blog end */
@@ -880,6 +867,33 @@ svg {}
 
 }
 
+@media(min-width:820px) {
+    .drinks__block-btn:hover {
+        background-color: #FFF9F1;
+        border: 1px solid rgba(122, 87, 62, 0.50);
+        color: #7E2832;
+
+    }
+
+    .drinks__block-btn:hover~.drinks__block-body {
+        color: #fff;
+        background-color: #B63E4C;
+        border-radius: 5px;
+        transition: all .3s ease;
+    }
+
+    .drinks__block-btn:hover~.drinks__block-body>.drinks__block-text {
+        color: #fff;
+
+    }
+
+    .arrow-next:hover svg path,
+    .arrow-prev:hover svg path {
+        transition: all .2s ease;
+        stroke: #fff
+    }
+}
+
 @media(max-width:820px) {
 
     .header {
@@ -932,7 +946,8 @@ svg {}
         margin-bottom: 43px;
     }
 
-    .menu__block {}
+
+
 
     .menu__block-body {
         width: 90%;
@@ -945,6 +960,8 @@ svg {}
         height: 100% !important;
 
     }
+
+
 
     .blog__btn {
 
@@ -1146,11 +1163,13 @@ svg {}
 
     .update {
         min-height: 228px;
-        padding-bottom: 0px;
+        padding-bottom: 16px;
+
     }
 
     .update__inner {
         padding: 41px 0;
+        border-radius: 7px;
     }
 
     .update__title {
@@ -1174,7 +1193,7 @@ svg {}
     }
 
     .input::placeholder {
-
+        padding-left: 19px;
         font-size: 12px;
     }
 
@@ -1184,7 +1203,7 @@ svg {}
         font-size: 12px;
     }
 
-    .footer{
+    .footer {
         padding-bottom: 25px;
     }
 
@@ -1204,7 +1223,7 @@ svg {}
         width: 200px;
     }
 
-    .input__footer::placeholder{
+    .input__footer::placeholder {
         font-size: 13px;
     }
 
@@ -1415,7 +1434,7 @@ svg {}
         width: 150px;
     }
 
-    .input__footer::placeholder{
+    .input__footer::placeholder {
         font-size: 13px;
     }
 
