@@ -1127,7 +1127,7 @@ a {
 
     .blog__btn {
         padding: 16px 75px;
-
+        border-radius: 5px;
     }
 
     .blog__title {
