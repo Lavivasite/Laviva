@@ -551,16 +551,11 @@ a {
 
 }
 
-.arrow-next:hover,
-.arrow-prev:hover {}
-
-
-
-
 
 .arrow-next:active svg path,
 .arrow-prev:active svg path {
     fill: #922C38;
+    stroke: #fff;
 }
 
 .swiper-button-disabled {
@@ -573,6 +568,7 @@ a {
 
 .arrow-next:active{
     color: #922C38;
+
 }
 
 /* blog end */
@@ -788,7 +784,7 @@ a {
     }
 
     .arrow-prev {
-        transform: translate(-120%, 0%) scale(-1);
+        transform: translate(-120%, -8%) scale(-1);
         left: 50%;
     }
 
@@ -891,7 +887,7 @@ a {
     .arrow-next:hover svg path,
     .arrow-prev:hover svg path {
         transition: all .2s ease;
-        stroke: #fff
+        stroke: #fff;
     }
 }
 
